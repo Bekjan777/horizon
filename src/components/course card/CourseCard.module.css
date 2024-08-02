@@ -1,0 +1,152 @@
+.card {
+  text-align: left;
+  font-family: var(--font-family);
+  border: 1px solid var(--white-95);
+  border-radius: 12px;
+  padding: 50px;
+  max-width: 783px;
+  background: var(--absolute-white);
+}
+@media (max-width: 1650px) {
+  .card {
+    padding: 40px;
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    padding: 24px;
+  }
+}
+.card__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+}
+@media (max-width: 1650px) {
+  .card__inner {
+    gap: 24px;
+  }
+}
+.card__inner_top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 1650px) {
+  .card__inner_top {
+    gap: 24px;
+  }
+}
+.card .img_container {
+  border-radius: 8px;
+  max-width: 683px;
+  max-height: 380px;
+  overflow: hidden;
+}
+.card .img_container .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card .tags_and_author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .tags_and_author .tags {
+  display: flex;
+  gap: 10px;
+}
+.card .tags_and_author .tags .duration, .card .tags_and_author .tags .level {
+  border: 1px solid var(--white-95);
+  border-radius: 8px;
+  padding: 10px 16px;
+  height: 43px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--grey-30);
+}
+@media (max-width: 1650px) {
+  .card .tags_and_author .tags .duration, .card .tags_and_author .tags .level {
+    border-radius: 6px;
+    padding: 8px 14px;
+    height: 34px;
+    font-size: 14px;
+  }
+}
+.card .tags_and_author .author {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--grey-15);
+}
+@media (max-width: 1650px) {
+  .card .tags_and_author .author {
+    font-size: 16px;
+  }
+}
+.card .heading_of_course {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--grey-15);
+  margin-bottom: 14px;
+}
+@media (max-width: 1650px) {
+  .card .heading_of_course {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .card .heading_of_course {
+    font-size: 18px;
+  }
+}
+.card .description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-30);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1650px) {
+  .card .description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .card .description {
+    font-size: 14px;
+  }
+}
+.card .btn_to_get_it {
+  border: 1px solid var(--white-95);
+  border-radius: 8px;
+  text-align: center;
+  padding: 18px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--grey-15);
+  background: var(--white-97);
+  width: 100%;
+  height: 63px;
+}
+@media (max-width: 1650px) {
+  .card .btn_to_get_it {
+    border-radius: 6px;
+    padding: 14px 24px;
+    height: 49px;
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=CourseCard.module.css.map */

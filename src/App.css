@@ -1,0 +1,24 @@
+/**{*/
+/*    outline: 1px red solid*/
+/*}*/
+.container{
+    max-width: 1596px;
+
+    margin: 0 auto;
+
+    @media (max-width: 1650px) {
+        max-width: 1280px;
+
+    }
+    @media (max-width: 1280px){
+        margin: 0 20px;
+    }
+    @media (max-width: 390px) {
+        margin: 0 16px;
+        max-width: 358px;
+
+    }
+}
+#root{
+    background-color: var(--white-97);
+}

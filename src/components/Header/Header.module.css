@@ -101,6 +101,7 @@
   }
 }
 .header__wrapper .left_side_header .logo_wrapper {
+  cursor: pointer;
   width: 54px;
   border-radius: 8px;
   height: 54px;
@@ -151,6 +152,7 @@
   height: 100%;
 }
 .header__wrapper .right_side_header .sign_up {
+  cursor: pointer;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from "../../components/Header/Header.jsx";
 import c from './HomePage.module.sass'
 import energy from '../../assets/HomePage/true_energy.svg'
@@ -8,6 +8,8 @@ import container from '../../assets/HomePage/Container.png'
 import CourseCard from "../../components/course card/CourseCard.jsx";
 import PeopleCV from "../../components/PeopleCV/PeopleCV.jsx";
 import Sara_L from '../../assets/HomePage/Sara_L.png'
+import PricingCard from "../../components/PricingCard/PricingCard.jsx";
+import Pricing from "../../components/Pricings/Pricing.jsx";
 // import Jason_M from '../../assets/HomePage/Jason_M.png'
 // import Emily_R from '../../assets/HomePage/Emily_R.png'
 // import Michael_K from '../../assets/HomePage/Michael_K.png'
@@ -17,9 +19,14 @@ const HomePage = () => {
     const openVideo = () => {
         setIsActive(true)
     }
+    const [currentPricing, setCurrentPricing] = useState('Monthly')
+    const switchPricing = props => {
+        console.log(props)
+        setCurrentPricing(props)
+    }
     return (
         <>
-            <Header/>
+
 
             <div className={c.main}>
                 <div className="container">
@@ -175,6 +182,29 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
+                <div className={c.main__our_pricing}>
+                    <div className="container">
+                        <div className={c.main__our_pricing__inner_top}>
+                            <h2 className={c.heading_h2}>
+                                Our Pricing
+                            </h2>
+                            <div className={c.main__our_pricing__inner_top__inner_container}>
+                                <p className={c.paragraph_under_heading}>Lorem ipsum dolor sit amet consectetur. Tempus
+                                    tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
+                                    cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                                <div className={c.choice_month_or_year}>
+                                    <span onClick={() => switchPricing('Monthly')} className={`${c.month} ${currentPricing==='Monthly' && c.active_price}`}>Montly</span>
+                                    <span onClick={() => switchPricing('Yearly')} className={`${c.year} ${currentPricing==='Yearly' && c.active_price}`}>Yearly</span>
+                                    <div className={`${c.chosen_bgc} ${currentPricing === 'Yearly' ? c.yearly_chosen : c.monthly_chosen}`}></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={c.main__our_pricing__inner_down}>
+                            <Pricing/>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </>
     );

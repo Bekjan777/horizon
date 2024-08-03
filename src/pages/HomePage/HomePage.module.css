@@ -12,10 +12,162 @@
     margin: 50px auto 144px;
   }
 }
+.main__our_pricing__inner_top {
+  font-family: var(--font-family);
+  text-align: left;
+  margin-bottom: 80px;
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_pricing__inner_top {
+    margin-bottom: 40px;
+  }
+}
+.main__our_pricing__inner_top .heading_h2 {
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 6px;
+  font-size: 48px;
+  color: var(--grey-15);
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top .heading_h2 {
+    font-size: 38px;
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_pricing__inner_top .heading_h2 {
+    font-size: 28px;
+  }
+}
+.main__our_pricing__inner_top__inner_container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .main__our_pricing__inner_top__inner_container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+.main__our_pricing__inner_top__inner_container .paragraph_under_heading {
+  font-weight: 400;
+  width: 1177px;
+  font-size: 18px;
+  line-height: 150%;
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .paragraph_under_heading {
+    width: 933px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 960px) {
+  .main__our_pricing__inner_top__inner_container .paragraph_under_heading {
+    width: 100%;
+  }
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year {
+  border-radius: 8px;
+  padding: 12px;
+  height: 79px;
+  display: inline-flex;
+  position: relative;
+  z-index: 0;
+  background: var(--absolute-white);
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .choice_month_or_year {
+    height: 69px;
+  }
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year .month, .main__our_pricing__inner_top__inner_container .choice_month_or_year .year {
+  box-sizing: content-box;
+  padding: 14px 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-30);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .choice_month_or_year .month, .main__our_pricing__inner_top__inner_container .choice_month_or_year .year {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year .active_price {
+  color: var(--absolute-white);
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year .chosen_bgc {
+  position: absolute;
+  border-radius: 6px;
+  padding: 14px 30px;
+  top: 12px;
+  height: 55px;
+  background-color: var(--orange-50);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .choice_month_or_year .chosen_bgc {
+    height: 45px;
+  }
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year .monthly_chosen {
+  width: 113px;
+  transform: translateX(0);
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .choice_month_or_year .monthly_chosen {
+    width: 89px;
+  }
+}
+.main__our_pricing__inner_top__inner_container .choice_month_or_year .yearly_chosen {
+  width: 109px;
+  transform: translateX(113px);
+}
+@media (max-width: 1440px) {
+  .main__our_pricing__inner_top__inner_container .choice_month_or_year .yearly_chosen {
+    width: 86px;
+    transform: translateX(89px);
+  }
+}
+.main__our_testimonials {
+  margin-bottom: 138px;
+}
+@media (max-width: 1440px) {
+  .main__our_testimonials {
+    margin-bottom: 83px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_testimonials {
+    margin-bottom: 50px;
+  }
+}
 .main__our_testimonials__inner_top {
   font-family: var(--font-family);
   text-align: left;
   margin-bottom: 80px;
+}
+@media (max-width: 1440px) {
+  .main__our_testimonials__inner_top {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_testimonials__inner_top {
+    margin-bottom: 40px;
+  }
 }
 .main__our_testimonials__inner_top .heading_h2 {
   font-weight: 600;
@@ -64,6 +216,7 @@
   }
 }
 .main__our_testimonials__inner_top__inner_container .button_view_all {
+  cursor: pointer;
   border: 1px solid var(--white-95);
   border-radius: 8px;
   padding: 18px 24px;
@@ -99,10 +252,30 @@
 .main__our_courses {
   margin-bottom: 139px;
 }
+@media (max-width: 1440px) {
+  .main__our_courses {
+    margin-bottom: 118px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_courses {
+    margin-bottom: 50px;
+  }
+}
 .main__our_courses__inner_top {
   font-family: var(--font-family);
   text-align: left;
   margin-bottom: 80px;
+}
+@media (max-width: 1440px) {
+  .main__our_courses__inner_top {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .main__our_courses__inner_top {
+    margin-bottom: 40px;
+  }
 }
 .main__our_courses__inner_top .heading_h2 {
   font-weight: 600;

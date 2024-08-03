@@ -1,0 +1,175 @@
+.card
+  border: 1px solid var(--white-95)
+  font-family: var(--font-family)
+  background: var(--white-99)
+  border-radius: 12px
+  padding: 50px 30px 30px
+  max-width: 704px
+  //height: 1046px
+  @media (max-width: 1440px)
+    padding: 40px 24px 24px
+  @media (max-width: 990px)
+    padding: 30px 20px 20px
+  &__inner
+    display: flex
+    flex-direction: column
+    gap: 50px
+    @media (max-width: 990px)
+      gap: 30px
+    .plan
+      border: 1px solid var(--orange-90)
+      border-radius: 6px
+      padding: 12px 22px
+      width: 100%
+      background: var(--orange-97)
+
+      font-weight: 500
+      font-size: 22px
+      line-height: 169%
+      color: var(--grey-15)
+      height: 61px
+      @media (max-width: 1440px)
+        border-radius: 4px
+        padding: 10px 22px
+        font-size: 18px
+        height: 50px
+      @media (max-width: 990px)
+        padding: 8px 22px
+        height: 43px
+        font-size: 16px
+    .price
+      width: 100%
+      height: 58px
+
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      .number
+        font-family: "Be Vietnam Pro", sans-serif
+        font-weight: 600
+        font-size: 80px
+        line-height: 73%
+        color: var(--grey-15)
+        @media (max-width: 1440px)
+          font-size: 60px
+      .per_what
+        font-weight: 500
+        font-size: 20px
+        line-height: 73%
+        color: var(--grey-30)
+        @media (max-width: 1440px)
+          font-size: 16px
+    .features
+      background: var(--absolute-white)
+
+
+      width: 100%
+      height: 100%
+      //position: relative
+      overflow: hidden
+      .get_started
+        cursor: pointer
+        background: var(--orange-50)
+        //display: none
+        border: none
+        font-weight: 600
+        font-size: 18px
+        line-height: 150%
+        text-align: center
+        color: var(--absolute-white)
+        border-radius: 0 0 8px 8px
+        padding: 20px 24px
+        width: 100%
+        //position: absolute
+        //bottom: 0
+        height: 67px
+        @media (max-width: 1440px)
+          padding: 18px 24px
+          height: 57px
+          font-size: 14px
+      &__inner
+        border: 1px solid var(--white-95)
+        border-radius: 14px 14px 0 0
+        padding: 40px
+        display: flex
+        flex-direction: column
+        gap: 30px
+        @media (max-width: 1440px)
+          padding: 30px
+          gap: 24px
+        @media (max-width: 990px)
+          gap: 20px
+          padding: 20px
+        .available_features
+          font-weight: 500
+          font-size: 20px
+          line-height: 150%
+          text-align: center
+          color: var(--grey-15)
+          @media (max-width: 1440px)
+            font-size: 18px
+        .list_of_features
+          list-style: none
+          display: flex
+          flex-direction: column
+          gap: 20px
+          padding: 0 30px
+          @media (max-width: 990px)
+            padding: 0
+          .feature_one
+            width: 100%
+            border: 1px solid var(--white-95)
+            border-radius: 8px
+            padding: 14px
+            height: 60px
+            align-items: center
+            display: flex
+            gap: 12px
+            @media (max-width: 1440px)
+              height: 48px
+              padding: 12px
+              border-radius: 6px
+
+            .true_check
+              border-radius: 6px
+              display: flex
+              justify-content: center
+              align-items: center
+              min-width: 32px
+              background: var(--orange-95)
+              height: 32px
+              @media (max-width: 1440px)
+                min-width: 24px
+                height: 24px
+              .checkbox
+                @media (max-width: 1440px)
+                  width: 12px
+            .false_check
+              border: 1px solid var(--white-95)
+              border-radius: 6px
+              padding: 6px
+              min-width: 32px
+              height: 32px
+              display: flex
+              justify-content: flex-start
+              align-items: center
+              @media (max-width: 1440px)
+                min-width: 24px
+                height: 24px
+              .checkbox
+                @media (max-width: 1440px)
+                  width: 8px
+                  width: 8px
+            .name_of_feature
+              text-align: left
+              font-weight: 400
+              font-size: 18px
+              line-height: 150%
+              overflow: hidden
+              text-overflow: ellipsis
+              display: -webkit-box
+              -webkit-line-clamp: 2
+              -webkit-box-orient: vertical
+              color: var(--grey-30)
+              @media (max-width: 1440px)
+                font-size: 14px

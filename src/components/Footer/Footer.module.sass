@@ -1,0 +1,168 @@
+.footer
+  width: 100%
+  background: var(--absolute-white)
+  &__inner
+    padding: 100px 0 30px
+    width: 100%
+    @media (max-width: 1440px)
+      padding: 60px 0 20px
+    @media (max-width: 1000px)
+      padding: 50px 0 24px
+    &__top
+      display: flex
+      justify-content: space-between
+      padding-bottom: 50px
+      border-bottom: 1px solid var(--white-95)
+
+      @media (max-width: 1440px)
+        padding-bottom: 30px
+      @media (max-width: 1000px)
+        gap: 24px
+        padding-bottom: 20px
+      @media (max-width: 560px)
+        flex-direction: column
+
+      .left_side_footer
+        display: flex
+        gap: 40px
+        flex-direction: column
+        @media (max-width: 1440px)
+          gap: 30px
+        .logo_container
+          width: 54px
+          height: 54px
+          @media (max-width: 1440px)
+            width: 44px
+            height: 44px
+          .logo
+            width: 100%
+            object-fit: cover
+            object-position: center
+        .list_left_side
+          list-style: none
+          display: flex
+          flex-direction: column
+          gap: 20px
+          @media (max-width: 1440px)
+            gap: 14px
+          @media (max-width: 1000px)
+            gap: 12px
+          .li_left_side
+            //width: 100%
+
+            .a_left_side
+              text-decoration: none
+              display: flex
+              //width: 100%
+              gap: 6px
+              align-items: center
+            .icon_footer_container
+              width: 24px
+              height: 24px
+              padding: 2px
+              @media (max-width: 1440px)
+                width: 20px
+                height: 20px
+              .icon_footer
+                width: 100%
+                object-fit: cover
+                object-position: center
+            .text_of_list_left_side
+              font-family: var(--font-family)
+              font-weight: 400
+              font-size: 18px
+              line-height: 150%
+              color: var(--grey-15)
+              @media (max-width: 1440px)
+                font-size: 16px
+              @media (max-width: 1000px)
+                font-size: 15px
+
+      .right_side_footer
+        font-family: var(--font-family)
+        display: flex
+        gap: 30px
+        flex-wrap: wrap
+        @media (max-width: 1440px)
+          gap: 24px
+        .list_right_side
+          display: flex
+          flex-direction: column
+          gap: 8px
+          list-style: none
+          .li_right_side
+            .link_right_side
+              text-decoration: none
+              .text_of_list_right_side
+                font-family: var(--font-family)
+                font-weight: 400
+                font-size: 18px
+                line-height: 150%
+                color: var(--grey-35)
+                @media (max-width: 1440px)
+                  font-size: 16px
+                @media (max-width: 1000px)
+                  font-size: 14px
+
+        .heading_h3
+          font-weight: 600
+          font-size: 20px
+          line-height: 150%
+          color: var(--grey-15)
+          @media (max-width: 1440px)
+            font-size: 18px
+
+        .home_column, .about_column, .social_column
+          width: 250px
+          display: flex
+          flex-direction: column
+          gap: 14px
+          @media (max-width: 1440px)
+            gap: 10px
+            width: 230px
+          @media (max-width: 1000px)
+            width: 150px
+
+        .home_column
+          @media (max-width: 560px)
+            width: 128px
+        .about_column
+          @media (max-width: 560px)
+            width: 190px
+
+        .social_column
+          @media (max-width: 560px)
+            width: 100%
+          .icons_socials
+            display: flex
+            gap: 14px
+            .social_media_container
+              border: 1px solid var(--white-95)
+              border-radius: 8px
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 52px
+              height: 52px
+              background: var(--white-97)
+              @media (max-width: 1440px)
+                border-radius: 6px
+                width: 44px
+                height: 44px
+              .image_of_social_media
+                @media (max-width: 1440px)
+                  width: 20px
+    &__down
+      text-align: center
+      margin-top: 50px
+      font-family: var(--font-family)
+      font-weight: 400
+      font-size: 18px
+      line-height: 150%
+      text-align: center
+      color: var(--grey-40)
+      @media (max-width: 1440px)
+        font-size: 14px
+        margin-top: 30px
+      @media (max-width: 1000px)
+        margin-top: 20px

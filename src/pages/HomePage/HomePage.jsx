@@ -8,7 +8,7 @@ import container from '../../assets/HomePage/Container.png'
 import CourseCard from "../../components/course card/CourseCard.jsx";
 import PeopleCV from "../../components/PeopleCV/PeopleCV.jsx";
 import Sara_L from '../../assets/HomePage/Sara_L.png'
-import PricingCard from "../../components/PricingCard/PricingCard.jsx";
+// import PricingCard from "../../components/PricingCard/PricingCard.jsx";
 import Pricing from "../../components/Pricings/Pricing.jsx";
 // import Jason_M from '../../assets/HomePage/Jason_M.png'
 // import Emily_R from '../../assets/HomePage/Emily_R.png'

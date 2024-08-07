@@ -1,17 +1,25 @@
 .header
-  width: 100%
-  padding: 20px 30px 0
+  //width: 100%
+  padding: 20px 0 0
   font-family: var(--font-family)
   font-weight: 400
   font-size: 18px
   line-height: 150%
   position: relative
   color: var(--grey-15)
-  @media (max-width: 1440px)
-    padding: 20px 20px 0
+
   @media (max-width: 1230px)
-    padding: 40px 16px 0
     font-size: 14px
+  @media (max-width: 768px)
+    padding: 16px 0 0
+  .underline
+    border-bottom: var(--white-95) 1px solid
+    margin: 0 20px
+    @media (max-width: 768px)
+      margin: 0 16px
+
+
+
   .list
 
     position: absolute
@@ -42,16 +50,13 @@
         list-style: none
         text-align: right
   &__wrapper
-    border-bottom: var(--white-95) 1px solid
     width: 100%
-    padding: 20px 132px 24px
+    padding: 20px 0 24px
     display: flex
     justify-content: space-between
     //@media (max-width: 1260px)
     //  padding: 16px 0 20px
     @media (max-width: 1230px)
-      padding: 14px 60px
-    @media (max-width: 900px)
       padding: 14px 0
     .left_side_header
       display: flex

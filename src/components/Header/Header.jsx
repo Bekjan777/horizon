@@ -2,7 +2,7 @@ import React from 'react';
 import c from './Header.module.sass'
 import logo from '../../assets/header/Logo.svg'
 import burger from '../../assets/header/burger.svg'
-
+import { Link } from "react-router-dom";
 const Header = () => {
 
     const [isActive, setIsActive] = React.useState(false)
@@ -10,63 +10,74 @@ const Header = () => {
     const onClickHamburger = () => {
         setIsActive(prev => !prev)
     }
-
-
+    const [currentPage, setCurrentPage] = React.useState('Home')
+    const toSwitchPage = page => {
+        setCurrentPage(page)
+        console.log(page)
+    }
     return (
 
-        <div className="container">
-            <div className={c.header}>
-                <div className={c.header__wrapper}>
-                    <div className={c.left_side_header}>
-                        <div className={c.logo_wrapper}>
-                            <img className={c.logo} src={logo} alt="logo"/>
+
+        <div className={c.header}>
+            <div className={c.underline}>
+                <div className="container">
+                    <div className={c.header__wrapper}>
+                        <div className={c.left_side_header}>
+                            <div className={c.logo_wrapper}>
+                                <img className={c.logo} src={logo} alt="logo"/>
+                            </div>
+                            <ul className={c.navbar}>
+                                <li onClick={() => toSwitchPage('Home')} className={c.navbar__li}>
+                                    <Link to="/"
+                                       className={`${c.navbar__li__a} ${currentPage === 'Home' && c.is_active}`}>
+                                        Home
+                                    </Link>
+                                </li>
+                                <li onClick={() => toSwitchPage('Courses')} className={`${c.navbar__li}`}>
+                                    <Link to="/courses"
+                                       className={`${c.navbar__li__a} ${currentPage === 'Courses' && c.is_active}`}>
+                                        Courses
+                                    </Link>
+                                </li>
+                                <li onClick={() => toSwitchPage('AboutUs')} className={`${c.navbar__li}`}>
+                                    <Link to=""
+                                       className={`${c.navbar__li__a} ${currentPage === 'AboutUs' && c.is_active}`}>
+                                        About Us
+                                    </Link>
+                                </li>
+                                <li onClick={() => toSwitchPage('Pricing')} className={`${c.navbar__li}`}>
+                                    <Link to=""
+                                       className={`${c.navbar__li__a} ${currentPage === 'Pricing' && c.is_active}`}>
+                                        Pricing
+                                    </Link>
+                                </li>
+                                <li onClick={() => toSwitchPage('Contact')} className={`${c.navbar__li}`}>
+                                    <Link to=""
+                                       className={`${c.navbar__li__a} ${currentPage === 'Contact' && c.is_active}`}>
+                                        Contact
+                                    </Link>
+                                </li>
+                            </ul>
                         </div>
-                        <ul className={c.navbar}>
-                            <li className={c.navbar__li}>
-                                <a href="" className={`${c.navbar__li__a} ${c.is_active}`}>
-                                    Home
-                                </a>
-                            </li>
-                            <li className={c.navbar__li}>
-                                <a href="" className={c.navbar__li__a}>
-                                    Courses
-                                </a>
-                            </li>
-                            <li className={c.navbar__li}>
-                                <a href="" className={c.navbar__li__a}>
-                                    About Us
-                                </a>
-                            </li>
-                            <li className={c.navbar__li}>
-                                <a href="" className={c.navbar__li__a}>
-                                    Pricing
-                                </a>
-                            </li>
-                            <li className={c.navbar__li}>
-                                <a href="" className={c.navbar__li__a}>
-                                    Contact
-                                </a>
-                            </li>
+                        <div className={c.right_side_header}>
+                            <span className={c.sign_up}>Sign Up</span>
+                            <button className={c.login}>
+                                Login
+                            </button>
+                            <div onClick={onClickHamburger} className={c.burger_wrapper}>
+                                <img src={burger} alt="burger" className={c.burger}/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={`${c.list} ${isActive ? c.list__active : ''}`}>
+                        <ul className={c.list__ul}>
+                            <li className={c.list__ul__li}>Home</li>
+                            <li className={c.list__ul__li}>Courses</li>
+                            <li className={c.list__ul__li}>About Us</li>
+                            <li className={c.list__ul__li}>Pricing</li>
+                            <li className={c.list__ul__li}>Contact</li>
                         </ul>
                     </div>
-                    <div className={c.right_side_header}>
-                        <span className={c.sign_up}>Sign Up</span>
-                        <button className={c.login}>
-                            Login
-                        </button>
-                        <div onClick={onClickHamburger} className={c.burger_wrapper}>
-                            <img src={burger} alt="burger" className={c.burger}/>
-                        </div>
-                    </div>
-                </div>
-                <div className={`${c.list} ${isActive ? c.list__active : ''}`}>
-                    <ul className={c.list__ul}>
-                        <li className={c.list__ul__li}>Home</li>
-                        <li className={c.list__ul__li}>Courses</li>
-                        <li className={c.list__ul__li}>About Us</li>
-                        <li className={c.list__ul__li}>Pricing</li>
-                        <li className={c.list__ul__li}>Contact</li>
-                    </ul>
                 </div>
             </div>
         </div>

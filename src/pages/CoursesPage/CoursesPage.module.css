@@ -1,0 +1,106 @@
+.courses_page__lower__inner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px 10px;
+}
+@media (max-width: 1650px) {
+  .courses_page__lower__inner {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 1225px) {
+  .courses_page__lower__inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 820px) {
+  .courses_page__lower__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px) {
+  .courses_page__lower__inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.courses_page__upper {
+  box-sizing: content-box;
+  margin: 100px 20px;
+  border-bottom: 1px solid var(--white-90);
+  padding-bottom: 50px;
+}
+@media (max-width: 1440px) {
+  .courses_page__upper {
+    margin: 80px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .courses_page__upper {
+    margin: 50px 16px;
+  }
+}
+.courses_page__inner__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family);
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .courses_page__inner__information {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 1225px) {
+  .courses_page__inner__information {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .courses_page__inner__information {
+    padding-bottom: 30px;
+  }
+}
+.courses_page__inner__information .heading_h1, .courses_page__inner__information .description {
+  max-width: 748px;
+}
+@media (max-width: 1440px) {
+  .courses_page__inner__information .heading_h1, .courses_page__inner__information .description {
+    max-width: 600px;
+  }
+}
+.courses_page__inner__information .heading_h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  color: var(--grey-15);
+}
+@media (max-width: 1440px) {
+  .courses_page__inner__information .heading_h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .courses_page__inner__information .heading_h1 {
+    font-size: 28px;
+  }
+}
+.courses_page__inner__information .description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--grey-35);
+}
+@media (max-width: 1440px) {
+  .courses_page__inner__information .description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .courses_page__inner__information .description {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=CoursesPage.module.css.map */

@@ -2,7 +2,13 @@ import React from 'react';
 import c from './Video.module.sass'
 import dots from '../../assets/CoursesPage/dots.svg'
 
+import {viewsConverter} from "../../functions/viewsConverter.jsx";
+import timeAgo from "../../functions/timeAgo.jsx";
+
 const Video = ({preview, heading, views, date}) => {
+
+
+
 
     return (
         <div className={c.video}>
@@ -16,10 +22,10 @@ const Video = ({preview, heading, views, date}) => {
                     </h3>
                     <div className={c.views_and_date}>
                         <span className={c.views}>
-                            {views}
+                            {`${viewsConverter(views)} views`}
                         </span>
                         <span className={c.date}>
-                            {date}
+                            {timeAgo(date)}
                         </span>
                     </div>
                 </div>

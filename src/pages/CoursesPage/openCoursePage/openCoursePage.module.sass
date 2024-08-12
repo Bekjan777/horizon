@@ -1,0 +1,198 @@
+
+
+.open_course
+  margin-bottom: 115px
+  &__under
+    font-family: var(--font-family)
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 75px
+    .left_side_info
+      display: flex
+      flex-direction: column
+      gap: 30px
+      width: 100%
+      .description_section
+        display: flex
+        flex-direction: column
+        gap: 10px
+        .extra_info
+          display: flex
+          gap: 15px
+          align-items: center
+
+          .dot
+            width: 4px
+            height: 4px
+            border-radius: 50%
+            background: var(--absolute-black)
+
+          .date
+
+            font-weight: 500
+            font-size: 18px
+            line-height: 150%
+            color: var(--absolute-black)
+        .description
+          font-weight: 400
+          font-size: 16px
+          line-height: 150%
+          color: var(--grey-35)
+          overflow: hidden
+          text-overflow: ellipsis
+          display: -webkit-box
+          -webkit-line-clamp: 4
+          -webkit-box-orient: vertical
+        .show_more
+          cursor: pointer
+          font-weight: 400
+          font-size: 18px
+          line-height: 150%
+          color: var(--absolute-black)
+        .show_fully
+          -webkit-line-clamp: initial
+      .comment_section
+        overflow: hidden
+        width: 100%
+        position: relative
+        height: 742px
+        border-radius: 8px
+        background: var(--absolute-white)
+        .to_comment
+          top: 0
+          position: absolute
+          width: 100%
+          border-radius: 8px
+          min-height: 62px
+          background: var(--absolute-white)
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding: 0 30px
+          gap: 25px
+          .avatar_container
+            width: 46px
+            height: 46px
+            overflow: hidden
+            border-radius: 50%
+            .avatar
+              object-fit: cover
+              object-position: center
+              width: 100%
+          .input_field_comment_section
+            border: none
+            width: 500px
+            text-overflow: ellipsis
+            height: 40px
+            overflow: hidden
+            padding: 10px
+            border-bottom: 1px solid var(--grey-60)
+            font-family: var(--font-family)
+            font-weight: 600
+            font-size: 14px
+            line-height: 150%
+            color: var(--grey-30)
+            resize: none
+            &::placeholder
+              font-weight: 600
+              font-size: 14px
+              line-height: 150%
+              color: var(--grey-60)
+            &:active, &:hover, &:focus
+              outline: 0
+              outline-offset: 0
+            &:focus
+              border-bottom: 2px solid var(--grey-30)
+
+
+          .to_leave_message
+            border-radius: 41px
+            width: 108px
+            border: none
+            background: var(--orange-50)
+            font-weight: 600
+            font-size: 14px
+            line-height: 150%
+            color: var(--absolute-white)
+            height: 40px
+    .right_side_video
+
+  &__inner
+    .video
+      margin-bottom: 51px
+      width: 100%
+      height: auto
+      //background: #000
+      aspect-ratio: 16 / 9
+      //display: flex
+      //justify-content: center
+      //align-items: center
+      position: relative
+      //text-align: center
+      overflow: hidden
+      &_preview
+        width: 100%
+
+        object-fit: cover
+        object-position: center
+
+        border-radius: 8px
+      .iframe
+        width: 100%
+        height: 100%
+        border-radius: 8px
+      .play_btn
+        position: absolute
+        margin: auto
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        cursor: pointer
+        border-radius: 50%
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.47)
+    .title_and_btns
+      font-family: var(--font-family)
+      display: flex
+      justify-content: space-between
+      margin-bottom: 20px
+      .heading_h3
+        font-weight: 600
+        font-size: 48px
+        line-height: 150%
+        color: var(--grey-15)
+      .btns
+        display: flex
+        gap: 10px
+        .share_container
+          width: 44px
+          height: 44px
+          padding-top: 5px
+          .share_image
+            width: 100%
+            object-fit: cover
+            object-position: center
+        .like_container
+          display: flex
+          justify-content: center
+          flex-direction: column
+          .like_container_image
+            width: 44px
+            height: 44px
+            .like_image
+              cursor: pointer
+              width: 100%
+              object-fit: cover
+              object-position: center
+              transition: 0.2s ease-in-out
+            .liked
+
+              fill: var(--grey-15)
+          .number_like
+            font-family: var(--font-family)
+            font-weight: 500
+            font-size: 18px
+            line-height: 150%
+            text-align: center
+            color: var(--absolute-black)
+            user-select: none

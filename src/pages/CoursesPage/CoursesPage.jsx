@@ -83,7 +83,7 @@ const CoursesPage = () => {
                         />
                         <Video
                             heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
+                            date={`07.02.2024`}
                             preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
                             views={12034}
                         />

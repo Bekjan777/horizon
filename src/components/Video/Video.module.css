@@ -53,17 +53,27 @@
   gap: 5px;
 }
 .video .information_of_video .heading_of_video {
-  font-size: 1.125rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-size: 18px;
+}
+@media (max-width: 1596px) {
+  .video .information_of_video .heading_of_video {
+    font-size: calc(15px + 3 * (100vw - 390px) / 1276);
+  }
 }
 .video .information_of_video .heading .views_and_date {
   display: flex;
   gap: 20px;
-  font-size: 0.875rem;
+  font-size: 14px;
+}
+@media (max-width: 1596px) {
+  .video .information_of_video .heading .views_and_date {
+    font-size: calc(10px + 4 * (100vw - 390px) / 1276);
+  }
 }
 .video .information_of_video .more_btn {
   max-width: 0.75em;

@@ -18,7 +18,7 @@ const OpenCoursePage = () => {
 
     },[])
     const { code, title, date , likes, isLiked, desc, avatar, views, listOfComents, listOfVideos} = video
-    // console.log(listOfVideos)
+    console.log(listOfVideos)
     const [show, setShow] = useState(false)
 
     const lengthText = useRef(null)
@@ -149,9 +149,11 @@ const OpenCoursePage = () => {
                         <div className={c.right_side_video}>
                             <div className={c.right_side_video__inner}>
                                 {
-                                    listOfVideos.map((video, i) => (
-                                        <LittleVideo key={i} preview={video.preview} date={video.date} views={video.views} desc={video.desc} title={video.title} />
-                                    ))
+                                    listOfVideos.map((video, i) => {
+                                        console.log(video)
+                                        return <LittleVideo key={i} preview={video.preview} date={video.date} views={video.views} desc={video.desc} title={video.title} />
+                                    }
+                                     )
                                 }
                                 <LittleVideo date={listOfVideos[0].date} desc={listOfVideos[0].desc} preview={listOfVideos[0].preview} views={listOfVideos[0].views} title={listOfVideos[0].title}/>
                             </div>

@@ -5,12 +5,11 @@ import {viewsConverter} from "../../functions/viewsConverter.jsx";
 import video from "../Video/Video.jsx";
 import {Link} from "react-router-dom";
 
-const LittleVideo = () => {
+const LittleVideo = ({id, title, desc, date, views, preview}) => {
 
-    const {id, title, desc, date, views, preview} = video
 
     return (
-        <Link to={`/courses/${id}`}>
+        <Link className={c.link} to={`/courses/${id}`}>
             <div className={c.video}>
                 <div className={c.video__inner}>
                     <div className={c.preview}>

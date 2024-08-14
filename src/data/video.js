@@ -61,6 +61,7 @@ export const video = {
     ],
     listOfVideos: [
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisci alias aliquam at aut commodi cum dolor dolorem doloribus earum eius eligendi est exercitationem expedita facere hic, iste maiores maxime nam necessitatibus nemo',
             date: '20.03.2024',
@@ -68,6 +69,7 @@ export const video = {
             title: 'ОБРЕЗАНИЕ МНОГОСТРОЧНОГО ТЕКСТА ТРОЕТОЧИЕМ | CSS'
         },
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisci alias aliquam at aut commodi cum dolor dolorem doloribus earum eius eligendi est exercitationем expedita facere hic, iste maiores maxime nam necessitatibus nemo',
             date: '20.03.2024',
@@ -75,6 +77,7 @@ export const video = {
             title: 'ОБРЕЗАНИЕ МНОГОСТРОЧНОГО ТЕКСТА ТРОЕТОЧИЕМ | CSS'
         },
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisci alias aliquam at aut commodi cum dolor dolorem doloribus earum eius eligendi est exercitationем экспедита facere хиц, исте маяорес максима нам necessitabus немо',
             date: '20.03.2024',
@@ -82,6 +85,7 @@ export const video = {
             title: 'ОБРЕЗАНИЕ МНОГОСТРОЧНОГО ТЕКСТА ТРОЕТОЧИЕМ | CSS'
         },
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisci alias aliquam at aut commodi cum dolor dolorem doloribus earum eius eligendi est exercitationem экспедита facere хиц, исте маяорес максима нам necessitabus немо',
             date: '20.03.2024',
@@ -89,6 +93,7 @@ export const video = {
             title: 'ОБРЕЗАНИЕ МНОГОСТРОЧНОГО ТЕКСТА ТРОЕТОЧИЕМ | CSS'
         },
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisци alias aliquam at aut commоди cum dolor dolorem doloribus earum eius eligendi est exercitationем экспедита facere хиц, исте маяорес максима нам necessitabus немо',
             date: '20.03.2024',
@@ -96,6 +101,7 @@ export const video = {
             title: 'ОБРЕЗАНИЕ МНОГОСТРОЧНОГО ТЕКСТА ТРОЕТОЧИЕМ | CSS'
         },
         {
+            id: 1,
             preview: 'https://img.youtube.com/vi/Ks49tcU-U0A/maxresdefault.jpg',
             desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore magni rerum! Ab ad adipisци alias aliquam at aut commоди cum dolor dolorem doloribus earum eius eligendi est exercitationем экспедита facere хиц, исте маяорес максима нам necessитабус немо',
             date: '20.03.2024',

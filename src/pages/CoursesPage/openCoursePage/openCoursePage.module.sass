@@ -54,13 +54,19 @@
       .comment_section
         overflow: hidden
         width: 100%
-        position: relative
         height: 742px
         border-radius: 8px
         background: var(--absolute-white)
+        .comments
+          margin-right: 10px
+          display: flex
+          padding: 30px 0 30px 30px
+          flex-direction: column
+          gap: 30px
+          overflow-y: scroll
+          height: 91%
+
         .to_comment
-          top: 0
-          position: absolute
           width: 100%
           border-radius: 8px
           min-height: 62px
@@ -116,6 +122,18 @@
             color: var(--absolute-white)
             height: 40px
     .right_side_video
+      height: 1130px
+
+      width: 100%
+      padding: 15px 10px 15px 15px
+      background-color: var(--absolute-white)
+      border-radius: 8px
+      &__inner
+        overflow-y: scroll
+        height: 1100px
+        display: flex
+        flex-direction: column
+        gap: 18px
 
   &__inner
     .video

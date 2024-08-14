@@ -1,0 +1,56 @@
+.video
+  width: 100%
+  padding-right: 10px
+  &__inner
+    font-family: var(--font-family)
+    display: flex
+    gap: 11px
+    .right_side_info
+      display: flex
+      flex-direction: column
+      gap: 11px
+      .extra
+        display: flex
+        gap: 10px
+        align-items: center
+        .date, .views
+          font-weight: 600
+          font-size: 14px
+          line-height: 150%
+          color: var(--grey-35)
+        .dot
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background-color: var(--grey-35)
+      .description
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        font-weight: 600
+        font-size: 14px
+        line-height: 150%
+        color: var(--grey-35)
+      .title
+        font-weight: 600
+        font-size: 21px
+        line-height: 150%
+        color: var(--grey-15)
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+
+    .preview
+      min-width: 308px
+      height: auto
+      aspect-ratio: 16 / 9
+      border-radius: 8px
+      overflow: hidden
+      &_pict
+        width: 100%
+        object-fit: cover
+        object-position: center

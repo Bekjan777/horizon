@@ -1,5 +1,8 @@
 @use '../../App' as *
 
+.link
+  text-decoration: none
+
 .video
   font-family: var(--font-family)
   display: flex
@@ -25,6 +28,7 @@
       &_of_video
         //font-size: rem(18)
         //font-weight: 600
+        color: var(--grey-15)
         overflow: hidden
         text-overflow: ellipsis
         display: -webkit-box
@@ -34,6 +38,7 @@
       .views_and_date
         display: flex
         gap: 20px
+        color: var(--grey-30)
         //font-size: rem(14)
         @include adaptive-value("font-size", 14, 10, 1)
         .views

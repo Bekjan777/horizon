@@ -21,78 +21,18 @@ const CoursesPage = () => {
             <div className={c.courses_page__lower}>
                 <div className="container">
                     <div className={c.courses_page__lower__inner}>
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.02.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
-                        <Video
-                            heading={`Джим Керри - Знаменитая Речь Взорвавшая Интернет! Мотивация Меняющая Сознание!`}
-                            date={`07.08.2024`}
-                            preview={`https://i.ytimg.com/vi/CDgrpn1fAmg/maxresdefault.jpg`}
-                            views={12034}
-                        />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
+                        <Video />
                     </div>
 
                 </div>

@@ -15,6 +15,7 @@ import Pricing from "../../components/Pricings/Pricing.jsx";
 // import Michael_K from '../../assets/HomePage/Michael_K.png'
 
 const HomePage = () => {
+
     const [isActive, setIsActive] = React.useState(false)
     const openVideo = () => {
         setIsActive(true)

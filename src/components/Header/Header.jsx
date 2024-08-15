@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 import {IconContext} from "react-icons";
 import './cancel.sass'
 const Header = () => {
-
     const [isActive, setIsActive] = React.useState(false)
 
     const onClickHamburger = () => {
@@ -28,11 +27,11 @@ const Header = () => {
                         <RxCross2 onClick={onClickHamburger}/>
                     </IconContext.Provider>
                     <ul className={c.list__ul}>
-                        <Link to={`/`} className={c.list__ul__li}>Home</Link>
-                        <Link to={`/courses`} className={c.list__ul__li}>Courses</Link>
-                        <Link to={`/about`} className={c.list__ul__li}>About Us</Link>
-                        <Link to={`/pricing`} className={c.list__ul__li}>Pricing</Link>
-                        <Link to={`/contact`} className={c.list__ul__li}>Contact</Link>
+                        <Link to={`/`} className={`${c.list__ul__li} ${currentPage === "Home" && c.active_mobile_page}`} onClick={()=>toSwitchPage("Home")}>Home</Link>
+                        <Link to={`/courses`} className={`${c.list__ul__li} ${currentPage === "Courses" && c.active_mobile_page}`} onClick={()=>toSwitchPage("Courses")}>Courses</Link>
+                        <Link to={`/about`} className={`${c.list__ul__li} ${currentPage === "AboutUs" && c.active_mobile_page}`} onClick={()=>toSwitchPage("AboutUs")}>About Us</Link>
+                        <Link to={`/pricing`} className={`${c.list__ul__li} ${currentPage === "Pricing" && c.active_mobile_page}`} onClick={()=>toSwitchPage("Pricing")}>Pricing</Link>
+                        <Link to={`/contact`} className={`${c.list__ul__li} ${currentPage === "Contact" && c.active_mobile_page}`} onClick={()=>toSwitchPage("Contact")}>Contact</Link>
                     </ul>
                 </div>
             </div>

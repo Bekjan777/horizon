@@ -1,9 +1,10 @@
 @use '../../../App' as *
 
 .open_course
-  margin-bottom: 115px
+  margin: 115px 0
+
   @media (max-width: 800px)
-    margin-bottom: 50px
+    margin: 50px 0
   &__under
     font-family: var(--font-family)
     display: grid
@@ -275,7 +276,7 @@
             color: var(--grey-15)
             user-select: none
             @include adaptive-value("font-size", 18, 12, 1)
-            @include adaptive-value("left", 11, 9, 1)
+            @include adaptive-value("left", 13, 11, 1)
             @include adaptive-value("top", 8, 7, 1)
           .selected
             color: var(--absolute-white)

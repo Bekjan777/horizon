@@ -4,7 +4,7 @@
     font-family: 'Be Vietnam Pro Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Be Vietnam Pro Regular'), url('BeVietnamPro-Regular.woff') format('woff');
+    src: local('./Be Vietnam Pro Regular'), url('./BeVietnamPro-Regular.woff') format('woff');
     }
     
 
@@ -12,7 +12,7 @@
     font-family: 'Be Vietnam Pro Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Be Vietnam Pro Medium'), url('BeVietnamPro-Medium.woff') format('woff');
+    src: local('./Be Vietnam Pro Medium'), url('./BeVietnamPro-Medium.woff') format('woff');
     }
 
 
@@ -20,7 +20,7 @@
     font-family: 'Be Vietnam Pro SemiBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Be Vietnam Pro SemiBold'), url('BeVietnamPro-SemiBold.woff') format('woff');
+    src: local('./Be Vietnam Pro SemiBold'), url('./BeVietnamPro-SemiBold.woff') format('woff');
     }
     
 
@@ -28,7 +28,7 @@
     font-family: 'Be Vietnam Pro Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Be Vietnam Pro Bold'), url('BeVietnamPro-Bold.woff') format('woff');
+    src: local('./Be Vietnam Pro Bold'), url('./BeVietnamPro-Bold.woff') format('woff');
     }
     
 
@@ -37,6 +37,6 @@
     font-family: 'Be Vietnam Pro ExtraBold';
     font-style: normal;
     font-weight: normal;
-    src: local('Be Vietnam Pro ExtraBold'), url('BeVietnamPro-ExtraBold.woff') format('woff');
+    src: local('./Be Vietnam Pro ExtraBold'), url('./BeVietnamPro-ExtraBold.woff') format('woff');
     }
     

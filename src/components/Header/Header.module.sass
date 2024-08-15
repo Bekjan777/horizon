@@ -5,8 +5,8 @@
   font-weight: 400
   font-size: 18px
   line-height: 150%
-  position: relative
   color: var(--grey-15)
+  position: relative
 
   @media (max-width: 1230px)
     font-size: 14px
@@ -19,36 +19,53 @@
       margin: 0 16px
 
 
+  transition: backdrop-filter 0.2s ease-in-out
 
   .list
+    backdrop-filter: blur(10px)
+    width: 100vw
+    overflow: hidden
+    height: 100vh
+    position: fixed
+    top: 0
 
-    position: absolute
-    top: 112px
-    right: 152px
-    width: 150px
-    height: 200px
-    border-radius: 0 0 10px 10px
     display: none
 
     justify-content: center
     align-items: center
     gap: 50px
-    background-color: var(--white-95)
+    background-color: rgba(0, 0, 0, 0.72)
     //@media (max-width: 1260px)
     //  right: 20px
     @media (max-width: 768px)
-      right: 16px
-      top: 124px
+    &__inner
+      position: relative
+      width: 100vw
+      height: 100vh
+
     &__active
       display: flex
+
       z-index: 10
       @media (min-width: 768px)
         display: none
     &__ul
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      gap: 30px
       &__li
-        
+        text-decoration: none
         list-style: none
-        text-align: right
+        text-align: center
+        color: var(--absolute-white)
+        opacity: .5
+        transition: all .15s ease-in
+        font-size: 25px
+
+        &:hover
+          opacity: 1
+          transform: scale(1.1)
   &__wrapper
     width: 100%
     padding: 20px 0 24px
@@ -101,6 +118,12 @@
       align-items: center
       @media (max-width: 425px)
         gap: 20px
+      @media (max-width: 768px)
+      .hidden_bur
+        display: none
+        width: 0
+        height: 0
+        position: absolute
       .burger_wrapper
         cursor: pointer
         display: none
@@ -110,6 +133,11 @@
         @media (max-width: 768px)
           display: block
           position: static
+          .hidden_bur
+            display: none
+            position: absolute
+            width: 0
+            height: 0
         .burger
           width: 100%
           height: 100%

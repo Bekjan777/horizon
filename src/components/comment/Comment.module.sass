@@ -4,10 +4,13 @@
   gap: 14px
 
   .avatar
-    width: 46px
-    height: 46px
+    max-width: 46px
+    max-height: 46px
     overflow: hidden
     border-radius: 50%
+    @media (max-width: 1440px)
+      max-width: 40px
+      max-height: 40px
     &_image
 
       object-fit: cover
@@ -26,9 +29,16 @@
       gap: 11px
       .name
         font-size: 20px
+        @media (max-width: 1440px)
+          font-size: 16px
       .time_ago
         font-size: 11px
+        @media (max-width: 1440px)
+          font-size: 9px
     .information
       font-size: 14px
       color: var(--grey-35)
-      max-width: 614px
+      //max-width: 614px
+      margin-right: 5px
+      @media (max-width: 1440px)
+        font-size: 12px

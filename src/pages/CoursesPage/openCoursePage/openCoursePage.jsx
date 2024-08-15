@@ -8,6 +8,9 @@ import Comment from "../../../components/comment/Comment.jsx";
 import LittleVideo from "../../../components/LittleVideo/LittleVideo.jsx";
 import {useParams} from "react-router-dom";
 import {video} from "../../../data/video.js";
+import {IconContext} from "react-icons";
+import { IoIosSend } from "react-icons/io";
+import './sendBtn.sass'
 import timeAgo from "../../../functions/timeAgo.jsx";
 
 const OpenCoursePage = () => {
@@ -87,7 +90,10 @@ const OpenCoursePage = () => {
                                     </svg>
 
                                 </div>
-                                <span className={c.number_like}>
+                                <span onClick={()=>{
+                                    isFavorite ? toRemoveFavorite() : toAddFavorite();
+                                    setIsFavorite(prev=>!prev)
+                                }} className={`${c.number_like} ${isFavorite && c.selected}`}>
                                     {likesNew}
                                 </span>
                             </div>
@@ -123,6 +129,10 @@ const OpenCoursePage = () => {
                                                   className={c.input_field_comment_section}/>
                                     <button type="button" className={c.to_leave_message}>
                                     Comment
+                                        <IconContext.Provider value={{ className: "icon-react-send-btn" }}>
+                                            <IoIosSend />
+                                        </IconContext.Provider>
+
                                     </button>
 
                                 </div>

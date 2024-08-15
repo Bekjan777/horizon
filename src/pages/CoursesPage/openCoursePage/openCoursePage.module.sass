@@ -1,17 +1,29 @@
-
+@use '../../../App' as *
 
 .open_course
   margin-bottom: 115px
+  @media (max-width: 800px)
+    margin-bottom: 50px
   &__under
     font-family: var(--font-family)
     display: grid
     grid-template-columns: repeat(2, 1fr)
     gap: 75px
+    @include adaptive-value("gap", 40, 20, 1)
+    @media (max-width: 945px)
+      grid-template-columns: repeat(1, 1fr)
+      justify-items: center
     .left_side_info
       display: flex
       flex-direction: column
       gap: 30px
-      width: 100%
+      //width: 100%
+      @media (max-width: 1650px)
+        @include adaptive-value("width", 764, 300, 3)
+      @media (max-width: 945px)
+        @include adaptive-value("width", 1200, 320, 3)
+
+
       .description_section
         display: flex
         flex-direction: column
@@ -30,7 +42,8 @@
           .date
 
             font-weight: 500
-            font-size: 18px
+            @include adaptive-value("font-size", 18, 14, 1)
+
             line-height: 150%
             color: var(--absolute-black)
         .description
@@ -43,12 +56,18 @@
           display: -webkit-box
           -webkit-line-clamp: 4
           -webkit-box-orient: vertical
+          @media (max-width: 1650px)
+            @include adaptive-value("font-size", 16, 14, 3)
+            //@include adaptive-value("width", 1, 14, 3)
+
         .show_more
           cursor: pointer
           font-weight: 400
           font-size: 18px
           line-height: 150%
           color: var(--absolute-black)
+          @include adaptive-value("font-size", 18, 14, 1)
+
         .show_fully
           -webkit-line-clamp: initial
       .comment_section
@@ -57,6 +76,8 @@
         height: 742px
         border-radius: 8px
         background: var(--absolute-white)
+        @media (max-width: 945px)
+          padding: 20px
         .comments
           margin-right: 10px
           display: flex
@@ -65,7 +86,11 @@
           gap: 30px
           overflow-y: scroll
           height: 91%
-
+          @media (max-width: 1440px)
+            padding: 20px 0 20px 20px
+          @media (max-width: 945px)
+            margin-right: 0
+            padding: 0
         .to_comment
           width: 100%
           border-radius: 8px
@@ -76,18 +101,23 @@
           justify-content: space-between
           padding: 0 30px
           gap: 25px
+          @media (max-width: 1440px)
+            padding: 0 20px
           .avatar_container
-            width: 46px
-            height: 46px
+            max-width: 46px
+            max-height: 46px
             overflow: hidden
             border-radius: 50%
+            @media (max-width: 1440px)
+              max-width: 40px
+              max-height: 40px
             .avatar
               object-fit: cover
               object-position: center
               width: 100%
           .input_field_comment_section
             border: none
-            width: 500px
+            flex: 0 1 500px
             text-overflow: ellipsis
             height: 40px
             overflow: hidden
@@ -113,7 +143,10 @@
 
           .to_leave_message
             border-radius: 41px
-            width: 108px
+
+
+            @include adaptive-value("min-width", 108, 70, 3)
+            @include adaptive-value("font-size", 14, 12, 1)
             border: none
             background: var(--orange-50)
             font-weight: 600
@@ -121,19 +154,39 @@
             line-height: 150%
             color: var(--absolute-white)
             height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            @media (max-width: 450px)
+              width: auto
+              min-width: auto
+              border-radius: 5px
+              padding: 5px
+              height: auto
+              font-size: 0
     .right_side_video
       height: 1130px
+      //@include adaptive-value("height", 1130, 630, 1)
 
       width: 100%
       padding: 15px 10px 15px 15px
       background-color: var(--absolute-white)
       border-radius: 8px
+      @media (max-width: 1650px)
+        @include adaptive-value("height", 1030, 630, 3)
+      @media (max-width: 950px)
+        padding: 20px
+        @include adaptive-value("width", 1200, 320, 3)
       &__inner
         overflow-y: scroll
+        //@include adaptive-value("height", 1100, 600, 1)
         height: 1100px
         display: flex
         flex-direction: column
         gap: 18px
+        @media (max-width: 1650px)
+          @include adaptive-value("height", 1000, 600, 3)
+
 
   &__inner
     .video
@@ -179,38 +232,50 @@
         font-size: 48px
         line-height: 150%
         color: var(--grey-15)
+        @media (max-width: 1440px)
+          @include adaptive-value("font-size", 48, 24, 3)
       .btns
         display: flex
         gap: 10px
         .share_container
-          width: 44px
-          height: 44px
+          //width: 44px
+          //height: 44px
           padding-top: 5px
+          @include adaptive-value("width", 44, 33, 1)
+          @include adaptive-value("heigth", 44, 33, 1)
+
           .share_image
             width: 100%
             object-fit: cover
             object-position: center
         .like_container
-          display: flex
-          justify-content: center
-          flex-direction: column
+          position: relative
           .like_container_image
-            width: 44px
-            height: 44px
+            @include adaptive-value("width", 44, 33, 1)
+            @include adaptive-value("heigth", 44, 33, 1)
             .like_image
+              
               cursor: pointer
               width: 100%
               object-fit: cover
               object-position: center
               transition: 0.2s ease-in-out
             .liked
-
+              
               fill: var(--grey-15)
+
           .number_like
+            position: absolute
+            //left: 11px
             font-family: var(--font-family)
             font-weight: 500
-            font-size: 18px
+            //font-size: 18px
             line-height: 150%
             text-align: center
-            color: var(--absolute-black)
+            color: var(--grey-15)
             user-select: none
+            @include adaptive-value("font-size", 18, 12, 1)
+            @include adaptive-value("left", 11, 9, 1)
+            @include adaptive-value("top", 8, 8, 1)
+          .selected
+            color: var(--absolute-white)

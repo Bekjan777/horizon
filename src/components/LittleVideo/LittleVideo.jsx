@@ -5,7 +5,7 @@ import {viewsConverter} from "../../functions/viewsConverter.jsx";
 import video from "../Video/Video.jsx";
 import {Link} from "react-router-dom";
 
-const LittleVideo = ({id, title, desc, date, views, preview}) => {
+const LittleVideo = ({id = 1, title, desc, date, views, preview}) => {
 
 
     return (

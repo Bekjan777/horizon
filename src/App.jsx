@@ -10,6 +10,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import CoursesPage from './pages/CoursesPage/CoursesPage.jsx'
 import OpenCoursePage from "./pages/CoursesPage/openCoursePage/openCoursePage.jsx";
+import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/" element={<HomePage />} />
                 <Route path="/courses" element={<CoursesPage/>} />
                 <Route path="/courses/:videoId" element={<OpenCoursePage/>} />
+                <Route path="about" element={<AboutPage/>} />
             </Routes>
             {/*<OpenCoursePage*/}
             {/*    code={`D_uLM5i0Z4c`}*/}

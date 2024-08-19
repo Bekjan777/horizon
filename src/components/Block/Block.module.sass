@@ -1,0 +1,53 @@
+@use '../../App' as *
+
+.block
+  background: var(--absolute-white)
+  border-radius: 12px
+  @include FontFamily
+  width: 100%
+  padding: 50px
+  @media (max-width: 1440px)
+    padding: 40px
+  &__inner
+    .img_container
+      border: 1px solid var(--orange-90)
+      background: var(--orange-97)
+      border-radius: 8px
+      padding: 16px
+      width: 66px
+      height: 66px
+      margin-bottom: 30px
+      @media (max-width: 1440px)
+        border-radius: 6px
+        padding: 14px
+        width: 56px
+        height: 56px
+        margin-bottom: 24px
+      &__image
+        width: 100%
+        object-fit: cover
+        object-position: center
+
+    .name
+      font-weight: 500
+      font-size: 24px
+      line-height: 150%
+      color: var(--grey-15)
+      margin-bottom: 14px
+
+      @media (max-width: 1440px)
+        font-size: 20px
+        margin-bottom: 10px
+      @media (max-width: 768px)
+        font-size: 18px
+        margin-bottom: 6px
+    .info
+      width: 100%
+      font-weight: 400
+      font-size: 18px
+      line-height: 150%
+      color: var(--grey-35)
+      @media (max-width: 1440px)
+        font-size: 16px
+      @media (max-width: 768px)
+        font-size: 14px

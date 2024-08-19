@@ -1,0 +1,43 @@
+@use '../../App' as *
+
+.about
+  font-family: $fontFamily
+  margin: 109px 20px 100px
+  padding-bottom: 50px
+
+  border-bottom: 1px solid var(--white-90)
+  @media (max-width: 1440px)
+    padding-bottom: 40px
+    margin: 80px 20px
+  @media (max-width: 768px)
+    margin: 50px 20px
+    padding-bottom: 30px
+  &__inner
+    &__platform
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 100px
+      align-items: center
+      @media (max-width: 768px)
+        grid-template-columns: repeat(1, 1fr)
+        gap: 16px
+
+      .title_of_page
+        font-weight: 600
+        font-size: 48px
+        line-height: 150%
+        color: var(--grey-15)
+        @media (max-width: 1440px)
+          @include adaptive-value("font-size", 48, 38, 3)
+        @media (max-width: 768px)
+          @include adaptive-value("font-size", 38, 28, 3)
+
+      .about_text
+        font-weight: 400
+        font-size: 18px
+        line-height: 150%
+        color: var(--grey-35)
+        @media (max-width: 1440px)
+          @include adaptive-value("font-size", 18, 16, 3)
+        @media (max-width: 768px)
+          @include adaptive-value("font-size", 16, 14, 3)

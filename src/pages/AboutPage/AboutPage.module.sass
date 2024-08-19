@@ -1,0 +1,16 @@
+@use '../../App' as *
+
+.about
+  margin-bottom: 150px
+  @media (max-width: 1440px)
+    margin-bottom: 100px
+  @media (max-width: 768px)
+    margin-bottom: 50px
+  &__inner
+    display: flex
+    flex-direction: column
+    gap: 177px
+    @media (max-width: 1440px)
+      gap: 100px
+    @media (max-width: 768px)
+      gap: 50px

@@ -13,24 +13,38 @@
       border: 1px solid var(--orange-90)
       background: var(--orange-97)
       border-radius: 8px
-      padding: 16px
+      //padding: 16px
       width: 66px
       height: 66px
       margin-bottom: 30px
+
+      display: flex
+      align-items: center
+      justify-content: center
       @media (max-width: 1440px)
         border-radius: 6px
         //padding: 16px
         width: 56px
+
+        height: 56px
+        margin-bottom: 24px
+      .img_c
+        width: 34px
+        height: 34px
         display: flex
         align-items: center
         justify-content: center
-        height: 56px
-        margin-bottom: 24px
-      &__image
-        width: 100%
+        @media (max-width: 1440px)
+          width: 28px
+          height: 28px
+        .img_container__image
 
-        object-fit: cover
-        object-position: center
+          width: 100%
+
+          object-fit: cover
+          object-position: center
+          @media (max-width: 1440px)
+            width: 28px
 
     .name
       font-weight: 500

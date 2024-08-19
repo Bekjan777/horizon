@@ -6,7 +6,9 @@ const Block = ({pict, name, info}) => {
         <div className={c.block}>
             <div className={c.block__inner}>
                 <div className={c.img_container}>
-                    <img src={pict} alt="pict" className={c.img_container__image}/>
+                    <span className={c.img_c}>
+                        <img src={pict} alt="pict" className={c.img_container__image}/>
+                    </span>
                 </div>
                 <h3 className={c.name}>{name}</h3>
                 <p className={c.info}>{info}</p>

@@ -4,7 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import './assets/fonts/inter/style.css'
 import './assets/fonts/be-vietnam-pro/style.css'
+import {Provider} from "react-redux";
+import { store } from "./store/index.js";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />,
+    <Provider store={store}>
+        <App />
+    </Provider>,
 )

@@ -10,6 +10,7 @@ import PeopleCV from "../../components/PeopleCV/PeopleCV.jsx";
 import Sara_L from '../../assets/HomePage/Sara_L.png'
 // import PricingCard from "../../components/PricingCard/PricingCard.jsx";
 import Pricing from "../../components/Pricings/Pricing.jsx";
+import Switcher from "../../components/switcher/switcher.jsx";
 // import Jason_M from '../../assets/HomePage/Jason_M.png'
 // import Emily_R from '../../assets/HomePage/Emily_R.png'
 // import Michael_K from '../../assets/HomePage/Michael_K.png'
@@ -20,11 +21,7 @@ const HomePage = () => {
     const openVideo = () => {
         setIsActive(true)
     }
-    const [currentPricing, setCurrentPricing] = useState('Monthly')
-    const switchPricing = props => {
-        console.log(props)
-        setCurrentPricing(props)
-    }
+
     return (
         <>
 
@@ -193,11 +190,7 @@ const HomePage = () => {
                                 <p className={c.paragraph_under_heading}>Lorem ipsum dolor sit amet consectetur. Tempus
                                     tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
                                     cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                                <div className={c.choice_month_or_year}>
-                                    <span onClick={() => switchPricing('Monthly')} className={`${c.month} ${currentPricing==='Monthly' && c.active_price}`}>Montly</span>
-                                    <span onClick={() => switchPricing('Yearly')} className={`${c.year} ${currentPricing==='Yearly' && c.active_price}`}>Yearly</span>
-                                    <div className={`${c.chosen_bgc} ${currentPricing === 'Yearly' ? c.yearly_chosen : c.monthly_chosen}`}></div>
-                                </div>
+                                <Switcher/>
                             </div>
                         </div>
                         <div className={c.main__our_pricing__inner_down}>

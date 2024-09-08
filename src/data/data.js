@@ -6,11 +6,12 @@ import bag from '../assets/about/bag.svg'
 import book from '../assets/about/book.svg'
 import puzzle from '../assets/about/puzzle.svg'
 import light from '../assets/about/light.svg'
+import Sara_L from "../assets/HomePage/Sara_L.png";
 
 
 export const aboutUs = [
     {
-        name: "About Skillbridge",
+            name: "About Skillbridge",
         info: "Welcome to our platform, where we are passionate about empowering individuals to master the world of design and development. We offer a wide range of online courses designed to equip learners with the skills and knowledge needed to succeed in the ever-evolving digital landscape.",
     },
     {
@@ -78,4 +79,52 @@ export const pricing = [
         title: 'Our Pricings',
         info: 'Welcome to SkillBridge\'s Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you\'re an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.'
     }
+]
+
+const signup_login = [
+    {
+        signup: 'Sign Up',
+        desc_signup: 'Welcome back! Please log in to access your account.',
+    },
+    {
+        login: 'Login',
+        desc_login: 'Create an account to unlock exclusive features.'
+    },
+    {
+        title: 'Students Testimonials',
+        under_text: 'Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.'
+    }
+]
+
+export const rates = [
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'Sara L1',
+    },
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'АЛЕГ БЛЯТЬ',
+    },
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'Sara L3',
+    },
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'Sara L4',
+    },
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'Sara L5',
+    },
+    {
+        avatar: Sara_L,
+        quote: 'The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!',
+        name: 'Sara L6',
+    },
 ]

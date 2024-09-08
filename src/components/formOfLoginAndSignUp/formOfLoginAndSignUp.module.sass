@@ -1,0 +1,37 @@
+@use '../../App' as *
+
+.form_page
+  margin: 100px 0 150px
+  @media (max-width: 1440px)
+    margin: 80px 100px
+  @media (max-width: 768px)
+    margin: 50px 0
+  &__inner
+    display: flex
+    gap: 100px
+    @media (max-width: 1440px)
+      gap: 80px
+    @media (max-width: 768px)
+      gap: 50px
+  .leftside_info
+    font-family: $fontFamily
+
+    display: flex
+    flex-direction: column
+    gap: 80px
+    .title_and_info
+      margin-bottom: 80px
+
+      .heading
+        font-weight: 500
+        font-size: 38px
+        line-height: 150%
+        color: var(--grey-15)
+      .info
+        font-weight: 400
+        font-size: 18px
+        line-height: 150%
+        color: var(--grey-35)
+    .slider_of_ratings
+  .form
+

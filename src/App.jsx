@@ -12,6 +12,7 @@ import CoursesPage from './pages/CoursesPage/CoursesPage.jsx'
 import OpenCoursePage from "./pages/CoursesPage/openCoursePage/openCoursePage.jsx";
 import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 import PricingPage from "./pages/PricingPage/PricingPage.jsx";
+import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/courses/:videoId" element={<OpenCoursePage/>} />
                 <Route path="/about" element={<AboutPage/>} />
                 <Route path="/pricing" element={<PricingPage/>} />
+                <Route path="/login" element={<LoginPage/>} />
             </Routes>
             {/*<OpenCoursePage*/}
             {/*    code={`D_uLM5i0Z4c`}*/}
